@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hometown Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="spots.html">SPOTS</a></li>
+                        <li><a href="municipalities.html">MUNICIPALITIES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Municipalities of Quirino Province</h1>
+        </section>
+
+        <!----municipalities content---->
+
+        <section class="municipalities">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/logo.jpg">
+                    <h2>Municipalities and Provincial Hymn of Quirino Province</h2>
+                    <p>Our land and home with liberty<br>
+                        Along Sierra Madre range<br>
+                        Its people are free and work with glee<br>
+                        In fields of golden grains<br>
+                        God-given land where all creeds blend<br>
+                        At hard work for more grains<br>
+                        Its hills and vales criss – crossed with trails<br>
+                        By brave sons for more lanes</p>
+                        Chorus:<br>
+                        <p>From Diffun as our gateway<br>
+                        Thru rolling hills and verdant plains<br>
+                        Southward we move to Cabarroguis gay<br>
+                        It's capital where government reigns<br>
+                        Farther we tour its southeastern edge<br>
+                        See Saguday and Aglipay<br>
+                        And to its southern rim we go<br>
+                        Maddela and Nagtipunan on the show<br>
+                        (Reapeat Chorus)
+                        </p>
+                        Finale:<br>
+                        <p>Maddela and Nagtipnan that's QUIRINO!
+                        </p>
+                </div>
+                <div class="blog-right">
+                    <h3>Municipalities of Quirino Province</h3>
+                    <div>
+                        <span>Diffun</span>
+                    </div>
+                    <div>
+                        <span>Cabarroguis</span>
+                    </div>
+                    <div>
+                        <span>Saguday</span>
+                    </div>
+                    <div>
+                        <span>Aglipay</span>
+                    </div>
+                    <div>
+                        <span>Maddela</span>
+                    </div>
+                    <div>
+                        <span>Nagtipunan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+
+       
+       
+
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+
+    </body>
+</html>

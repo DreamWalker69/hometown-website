@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hometown Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="spots.html">SPOTS</a></li>
+                        <li><a href="municipalities.html">MUNICIPALITIES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+        <div class="text-box">
+            <h1>Welcome to Quirino Province</h1>
+            <p>Quirino, officially the Province of Quirino (Ilocano: Probinsia ti Quirino; Tagalog: Lalawigan ng Quirino),
+                 is a landlocked province in the Philippines located in the Cagayan Valley region in Luzon.<br>Its capital is Cabarroguis.
+                  It is named after Elpidio Quirino, the sixth President of the Philippines.
+            The province borders Aurora to the southeast, Nueva Vizcaya to the west, and Isabela to the north.<br> 
+            Quirino used to be part of the province of Nueva Vizcaya, until it was separated in 1966.</p>
+            <a href="" class="hero-btn">Visit to Know More</a>
+
+        </div>
+
+        </section>
+
+        <!-----History----->
+
+        <section class="History">
+            <h1>History Of Quirino Province</h1>
+            <p>Long before its formal creation as an independent province, Quirino was the forest region of the province of Nueva Vizcaya, inhabited by tribal groups known as the Negritos. 
+            They roamed the hinterlands and built their huts at the heart of the jungle. Aside from the Negritos, the area was also inhabited by Ilongot people, 
+            who were feared for their headhunting raids against enemy tribes and Spanish-controlled settlements. Throughout the period of Spanish colonization, 
+            the province was one of the few remaining unconquered areas in the Philippines due to its remoteness, having only seen a Spanish military expedition in 1848 and the brief presence of Spanish missionaries in 1891. 
+            During the American period, the territory of Quirino was administered by the province of Isabela before Congressman Leon Cabarroguis of Nueva Vizcaya pushed for its return to Nueva Vizcaya by authoring Republic Act No. 236, 
+            which was signed into law in 1948.</p>
+        </section>
+
+        
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+
+    </body>
+</html>

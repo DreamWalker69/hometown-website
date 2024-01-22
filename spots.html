@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hometown Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="spots.html">SPOTS</a></li>
+                        <li><a href="municipalities.html">MUNICIPALITIES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Tourist Spots of Quirino Province</h1>
+        </section>
+
+        <!----Tourist Spots---->
+        <section class="Spots">
+            <h1>Tourist Spots</h1>
+            <p>View the Beautiful Tourist Spots of Quirino Province</p>
+
+            <div class="row">
+                <div class="Spots-col">
+                    <img src="images/gov-rap.webp">
+                    <h3>Governor's Rapids(Maddela)</h3>
+                </div>
+                <div class="Spots-col">
+                    <img src="images/Landingan-Viewpoint.webp">
+                    <h3>Landingan Viewpoint(Nagtipunan)</h3>
+                </div>
+                <div class="Spots-col">
+                    <img src="images/Mactol-Falls.webp">
+                    <h3>Mactol Falls(Nagtipunan)</h3>
+                </div>
+                <div class="Spots-col">
+                    <img src="images/Quirino-Watersports-Complex.webp">
+                    <h3>Quirino WterSports Complex(Cabarroguis)</h3>
+                </div>
+                <div class="Spots-col">
+                    <img src="images/pf.webp">
+                    <h3>Pensal Falls(Aglipay)</h3>
+                </div>
+                <div class="Spots-col">
+                    <img src="images/bimmapor.webp">
+                    <h3>Bimmapor Rock Formation(Nagtipunan)</h3>
+                </div>
+            </div>
+        </section>
+
+       
+       
+
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+
+    </body>
+</html>

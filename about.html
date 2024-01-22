@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hometown Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="spots.html">SPOTS</a></li>
+                        <li><a href="municipalities.html">MUNICIPALITIES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About</h1>
+        </section>
+
+       <!-----About Content----->
+
+       <section class="about">
+
+            <div class="row">
+                <div class="about-col">
+                    <h1>QUIRINO</h1>
+                    <p>Quirino is a landlocked province in the Philippines located in the Cagayan Valley Region in Luzon.<br> 
+                        Its capital is Cabarroguis. Quirino, dubbed as the “Forest Heartland of Cagayan Valley”, 
+                        was created in 1971 <br>and named after former President Elpidio Quirino, 
+                        the 6th President of the Philippines. <br>The province is known for its rugged topography, 
+                        which makes it a beautiful paradise for outdoor-loving travelers.</p>
+                        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/yawa.webp">
+                </div>
+
+            </div>
+       </section>
+
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+        <script>
+
+            var navLinks = document.getElementById("navLinks")
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+
+
+    </body>
+</html>
